@@ -15,79 +15,7 @@ This file contains templates for creating standalone issues without full PRD/Pla
 
 ## User Story Template
 
-```markdown
-# [STORY-YYYY-MM-DD-###]: [Action-Oriented Title]
-
-**Type**: User Story  
-**Priority**: [Critical/High/Medium/Low]  
-**Estimate**: [XS/S/M/L/XL]  
-**Status**: Backlog  
-
-## User Story
-
-**As a** [type of user]  
-**I want** [capability]  
-**So that** [benefit/value]
-
-## Context
-
-[Background information, related features, business goals]
-
-## Acceptance Criteria
-
-- [ ] **GIVEN** [initial context]  
-      **WHEN** [action taken]  
-      **THEN** [expected outcome]
-
-- [ ] **GIVEN** [another context]  
-      **WHEN** [action taken]  
-      **THEN** [expected outcome]
-
-- [ ] [Additional criterion if needed]
-
-## Edge Cases
-
-- **[Edge case 1]**: [How to handle]
-- **[Edge case 2]**: [How to handle]
-
-## Out of Scope
-
-- [What this story explicitly does NOT include]
-- [Deferred items]
-
-## Dependencies
-
-- [ ] [Dependency 1 - with status]
-- [ ] [Dependency 2 - with status]
-
-## Technical Notes
-
-[Any implementation guidance, constraints, or considerations]
-
-## Design Assets
-
-- [Link to mockups/wireframes if available]
-- [Link to design specs if available]
-
-## Success Metrics
-
-- [How we'll measure if this delivers value]
-- [Expected impact]
-
-## Labels
-
-`user-story`, `[priority-label]`, `[area/team]`, `[feature-group]`
-
----
-
-## Constitution Validation
-
-- [ ] ✅ Clear user value stated (Principle I)
-- [ ] ✅ Testable acceptance criteria (Principle II)
-- [ ] ✅ Sufficient context provided (Principle III)
-- [ ] ✅ Priority indicated (Principle IV)
-- [ ] ✅ Consistent terminology (Principle V)
-```
+To create standalone stories, follow the `templates/stories-template.md`
 
 ---
 
@@ -96,11 +24,8 @@ This file contains templates for creating standalone issues without full PRD/Pla
 ```markdown
 # [BUG-YYYY-MM-DD-###]: [Problem Statement]
 
-**Type**: Bug  
 **Severity**: [Critical/High/Medium/Low]  
 **Priority**: [Critical/High/Medium/Low]  
-**Status**: To Do  
-**Environment**: [Production/Staging/Development]
 
 ## Summary
 

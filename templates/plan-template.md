@@ -1,38 +1,35 @@
-# Plan Template - Release & Execution Plan
+# plan-template
 
+This template provides structure to create a summary of a plan, detailing the structure of Releases, Epics and Issues.
 
-## Document Information
-
-**Product/Feature**: [Name from PRD]  
-**Plan Owner**: [Product Manager]  
-**Status**: [Draft/In Review/Approved/In Progress]  
-**Last Updated**: [Date]  
-**Version**: [X.Y]  
-**Related PRD**: [Link to PRD]
-
+---
+**name**: [Name from PRD]  
+**team**: [Team Name]
+**created_at**: [YYYY-MM-DD]
+**last_updated**: [YYYY-MM-DD]  
 ---
 
 ## Executive Summary
 
-[2-3 sentences: What we're building, timeline, and expected impact]
+[3-4 sentences: What we're building, Why we are building, how we will solve this  and expected impact]
 
 ---
 
-## Roadmap
+## Deliverables Relationship
 
 ```
-Release 1 [Date Range]
-  ├── Epic 1.1 [Date]
+Release 1 [Date Range - if provided]
+  ├── Epic 1.1 [Date - if provided]
   │   ├── Story/Task 1.1.1
   │   └── Story/Task 1.1.2
-  └── Epic 1.2 [Date]
+  └── Epic 1.2 [Date - if provided]
       ├── Story/Task 1.2.1
       └── Story/Task 1.2.2
 
-Release 2 [Date Range]
-  ├── Epic 2.1 [Date]
+Release 2 [Date Range - if provided]
+  ├── Epic 2.1 [Date - if provided]
   │   └── Story/Task 2.1.1
-  └── Epic 2.2 [Date]
+  └── Epic 2.2 [Date - if provided]
       └── Story/Task 2.2.1
 ```
 
@@ -43,7 +40,6 @@ Release 2 [Date Range]
 ### Release 1: [Name]
 
 **Goal**: [What this release achieves]  
-**Timeline**: [Start Date] → [End Date]  
 **What includes this release**:
 - [Epic name 1]
 - [Epic name 2]
@@ -60,10 +56,7 @@ Release 2 [Date Range]
 
 #### Epic 1.1: [Name]
 
-**Focus**: [What this delivery accomplishes]  
-**Target Date**: [Date]  
-
-##### Story/Task 1.1.1: [Epic Name]
+**Focus**: [What this delivery accomplishes]
 
 **User Value**: [As a user, what value does this epic deliver?]
 
@@ -76,7 +69,7 @@ Release 2 [Date Range]
 - [ ] [High-level criterion 1]
 - [ ] [High-level criterion 2]
 
-**Estimate**: [Story points or time]  
+**Target Date**: [Date - if provided]  
 **Priority**: [High/Medium/Low]
 
 ---
@@ -87,58 +80,9 @@ Release 2 [Date Range]
 
 ---
 
-#### Delivery 1.2: [Name]
-
-[Same structure as Delivery 1.1]
-
----
-
 ### Release 2: [Name]
 
 [Same structure as Release 1]
-
----
-
-## Detailed Epic Breakdown
-
-### Epic: [Epic Name]
-
-**ID**: EPIC-YYYY-MM-DD-###  
-**Release**: [Release name]  
-**Delivery**: [Delivery name]
-
-#### Overview
-**User Value**: [What user problem does this solve?]  
-**Business Value**: [What business goal does this achieve?]  
-**Success Metrics**: [How we measure success]
-
-#### Stories
-
-1. **STORY-YYYY-MM-DD-001**: [Story Title]
-   - **User Story**: As a [user], I want [capability], so that [benefit]
-   - **Estimate**: [S/M/L]
-   - **Priority**: [High/Med/Low]
-   - **Dependencies**: [Other stories if any]
-
-2. **STORY-YYYY-MM-DD-002**: [Story Title]
-   [Same structure]
-
-3. **STORY-YYYY-MM-DD-003**: [Story Title]
-   [Same structure]
-
-#### Technical Considerations
-- [Technical note 1]
-- [Technical note 2]
-
-#### Design Assets
-- [Link to mockups]
-- [Link to prototypes]
-
-#### Testing Strategy
-- [How we'll test this epic]
-
-#### Rollout Plan
-- [How we'll release to users]
 
 ---
 
@@ -384,47 +328,3 @@ Epic 1.1.2 ──→ Epic 1.2.1
 - [ ] ✅ **Complete Context**: Plan is self-contained
 - [ ] ✅ **Prioritized Work**: Clear sequencing and priorities
 - [ ] ✅ **Consistent Terminology**: Aligned with PRD terminology
-
----
-
-## Multi-Language Headers
-
-### Portuguese (Português)
-
-```markdown
-# Template de Plano - Plano de Release e Execução
-## Informações do Documento
-## Resumo Executivo
-## Estratégia de Release
-## Roadmap
-## Releases
-## Dependências e Sequenciamento
-## Planejamento de Recursos
-## Métricas de Sucesso e KPIs
-## Gestão de Riscos
-## Plano de Comunicação
-## Garantia de Qualidade
-## Prontidão para Lançamento
-## Pós-Lançamento
-## Apêndice
-```
-
-### Spanish (Español)
-
-```markdown
-# Plantilla de Plan - Plan de Lanzamiento y Ejecución
-## Información del Documento
-## Resumen Ejecutivo
-## Estrategia de Lanzamiento
-## Hoja de Ruta
-## Lanzamientos
-## Dependencias y Secuenciación
-## Planificación de Recursos
-## Métricas de Éxito y KPIs
-## Gestión de Riesgos
-## Plan de Comunicación
-## Aseguramiento de Calidad
-## Preparación para el Lanzamiento
-## Post-Lanzamiento
-## Apéndice
-```

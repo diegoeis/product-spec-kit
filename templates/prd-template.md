@@ -1,16 +1,17 @@
-# PRD Template - Product Requirements Document
+# prd-template
+
+This template provides structure to create PRD giving all details the AI Workflows or human devs need to build something with clear context, scope, acceptance criteria, dependencies, and constitution validation.
+
+Starting with metadata:
 
 ---
-
-## Document Information
-
-**Product/Feature**: [Name]  
-**Owner**: [Product Manager name]  
-**Status**: [Draft/In Review/Approved]  
-**Last Updated**: [Date]  
-**Version**: [X.Y]
-
+**name**: [Name]  
+**version**: [X.Y]
+**created_at**: [YYYY-MM-DD]
+**last_updated**: [YYYY-MM-DD] 
 ---
+
+# [Name of the PRD]
 
 ## TL:DR;
 
@@ -21,15 +22,12 @@
 - **How** to solve: 
   - [Solution or hypothesis of a solution that we will build; bullet points]
 
-## Context Summary
+## Context summary
 
 [2-3 paragraph overview answering: What are we building? Why? Who for? Expected impact? You can expand the informations of the TLDR;]
 
----
-
 ## Problem Statement
 
-### Current Situation
 [What's happening today? What pain exists? Expand the TLDR informations, but asks to user if we don't have enough informations]
 
 ### User Pain Points
@@ -39,8 +37,6 @@
 
 ### Solution Opportunity
 [Why is now the right time? What's the opportunity cost of not doing this? The description of our solution and how it will help user to solve the problem and the company explore this opportunity.]
-
----
 
 ## Goals & Success
 
@@ -54,8 +50,6 @@
 - [Goal 2]
 - [Goal 3]
 
-
----
 
 ## Target Users
 
@@ -73,8 +67,6 @@
 
 ### Secondary Personas
 [Brief descriptions of other affected users]
-
----
 
 ## Requirements
 
@@ -98,8 +90,6 @@
 [Same structure]
 
 
----
-
 ## User Experience
 
 ### User Flows
@@ -119,9 +109,6 @@
 ### Wireframes/Mockups
 - [Link to design file 1]
 - [Link to design file 2]
-
-
----
 
 ## Technical Considerations
 
@@ -153,8 +140,6 @@
 | [Risk 1] | [H/M/L] | [H/M/L] | [Strategy] |
 | [Risk 2] | [H/M/L] | [H/M/L] | [Strategy] |
 
----
-
 ### Non-Functional Requirements
 
 #### Performance
@@ -177,8 +162,6 @@
 - [Requirement 1]
 - [Requirement 2]
 
-
----
 
 ## Scope & Boundaries
 
@@ -299,35 +282,6 @@ Q[X+1] [Year]: [Phase 2 Name]
 ### References
 - [External reference 1]
 - [External reference 2]
-
----
-
-## Short PRD Format (Alternative)
-
-For simpler features, use this condensed version:
-
-### [Feature Name]
-
-**Problem**: [What problem are we solving?]
-
-**Solution**: [What are we building?]
-
-**Why Now**: [Why is this a priority?]
-
-**Who**: [Target users]
-
-**Success**: [How we'll measure it]
-
-**Requirements**:
-1. [Must have 1]
-2. [Must have 2]
-3. [Should have 1]
-
-**Out of Scope**: [What we're NOT doing]
-
-**Timeline**: [High-level dates]
-
-**Owner**: [PM name]
 
 ---
 
