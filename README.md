@@ -114,7 +114,7 @@ Before finalizing any document:
 - [QUICKSTART.md](docs/QUICKSTART.md) - 5-minute guide
 - [INSTALL.md](docs/INSTALL.md) - Installation instructions
 - [WORKFLOWS.md](docs/WORKFLOWS.md) - Detailed workflow guide
-- [constitution.md](memory/constitution.md) - Core principles
+- [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md) - Core principles
 
 ## 🔧 Installation
 
