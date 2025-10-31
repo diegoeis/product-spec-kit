@@ -24,49 +24,17 @@ Starting with metadata:
 
 ## Context summary
 
-[2-3 paragraph overview answering: What are we building? Why? Who for? Expected impact? You can expand the informations of the TLDR;]
-
-## Problem Statement
-
-[What's happening today? What pain exists? Expand the TLDR informations, but asks to user if we don't have enough informations]
+[2-3 paragraphs answering: What the problem we will solve or the opportunity we will explore. What's happening today? What pain exists? Expand the TLDR informations, but asks to user if we don't have enough informations]
 
 ### User Pain Points
 1. **[Pain Point 1]**: [Description]
 2. **[Pain Point 2]**: [Description]
 3. **[Pain Point 3]**: [Description]
 
-### Solution Opportunity
-[Why is now the right time? What's the opportunity cost of not doing this? The description of our solution and how it will help user to solve the problem and the company explore this opportunity.]
+### Solution
+[2-3 paragraph overview answering: What are we building? Why? Who for? Expected impact? You can expand the informations of the TLDR;]
 
-## Goals & Success
-
-### Business Goals
-- [Goal 1]
-- [Goal 2]
-- [Goal 3]
-
-### User Goals
-- [Goal 1]
-- [Goal 2]
-- [Goal 3]
-
-
-## Target Users
-
-### Primary Personas
-
-#### Persona 1: [Name/Role]
-- **Description**: [Who they are]
-- **Goals**: [What they want to achieve]
-- **Pain Points**: [Current frustrations]
-- **Jobs to be Done**: [Tasks they're trying to complete]
-- **Usage Context**: [When/where/how they use the product]
-
-#### Persona 2: [Name/Role]
-[Same structure]
-
-### Secondary Personas
-[Brief descriptions of other affected users]
+[Describe what the solution is and why it is the best solution. What's the opportunity cost of not doing this? The description of our solution and how it will help user to solve the problem and the company explore this opportunity.]
 
 ## Requirements
 
@@ -89,27 +57,6 @@ Starting with metadata:
 #### Nice to Have (P2)
 [Same structure]
 
-
-## User Experience
-
-### User Flows
-
-#### Flow 1: [Name]
-```
-1. User starts at [entry point]
-2. User [action]
-3. System [response]
-4. User [next action]
-5. Final state: [outcome]
-```
-
-#### Flow 2: [Name]
-[Same structure]
-
-### Wireframes/Mockups
-- [Link to design file 1]
-- [Link to design file 2]
-
 ## Technical Considerations
 
 ### Architecture Overview
@@ -122,6 +69,7 @@ Starting with metadata:
 ### Integrations
 - **[System 1]**: [What/why/how]
 - **[System 2]**: [What/why/how]
+
 
 ### Data Model
 [Key entities and relationships]
@@ -161,6 +109,57 @@ Starting with metadata:
 #### Compliance
 - [Requirement 1]
 - [Requirement 2]
+
+## Goals & Success
+
+### Business Goals
+- [Goal 1]
+- [Goal 2]
+- [Goal 3]
+
+### User Goals
+- [Goal 1]
+- [Goal 2]
+- [Goal 3]
+
+
+## Target Users
+
+### Primary Personas
+
+#### Persona 1: [Name/Role]
+- **Description**: [Who they are]
+- **Goals**: [What they want to achieve]
+- **Pain Points**: [Current frustrations]
+- **Jobs to be Done**: [Tasks they're trying to complete]
+- **Usage Context**: [When/where/how they use the product]
+
+#### Persona 2: [Name/Role]
+[Same structure]
+
+### Secondary Personas
+[Brief descriptions of other affected users]
+
+## User Experience
+
+### User Flows
+
+#### Flow 1: [Name]
+```
+1. User starts at [entry point]
+2. User [action]
+3. System [response]
+4. User [next action]
+5. Final state: [outcome]
+```
+
+#### Flow 2: [Name]
+[Same structure]
+
+### Wireframes/Mockups
+- [Link to design file 1]
+- [Link to design file 2]
+
 
 
 ## Scope & Boundaries

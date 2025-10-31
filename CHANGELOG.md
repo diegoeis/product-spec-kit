@@ -73,7 +73,7 @@ All notable changes to Product Spec Kit will be documented in this file.
 #### Core Workflows
 - **create-prd**: Create Product Requirements Documents
 - **clarify-prd**: Refine PRDs with targeted questions
-- **create-plan**: Generate release plans with epics and stories
+- **plan**: Generate release plans with epics and stories
 - **create-stories**: Create detailed user stories
 - **clarify-stories**: Refine stories with questions
 - **analyze**: Cross-document consistency validation

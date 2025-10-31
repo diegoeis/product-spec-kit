@@ -1,6 +1,6 @@
 ---
+trigger: always_on
 description: non-negotiable principles to maintain patterns and govern all documentations created with this skill
-alwaysApply: Always
 ---
 
 # Product Documentation Constitution
@@ -140,7 +140,6 @@ People join teams, context gets lost, memories fade. Self-contained documents en
 - **Quick Stories**: Provide enough context to execute without asking questions
 - **Quick Bugs**: Document environment, steps, expected behavior
 - **Quick Tasks**: Explain why this work matters
-- **Quick Spikes**: Clarify what decision depends on this research
 
 ---
 
@@ -242,39 +241,6 @@ All five principles apply strictly:
 4. ✅ Clear priorities and sequencing
 5. ✅ Consistent terminology across all docs
 
-### Quick Issues Workflow
-
-All five principles still apply, adapted for single-item creation:
-
-**Quick Stories**:
-- ✅ User value in story format
-- ✅ Testable acceptance criteria (GIVEN-WHEN-THEN)
-- ✅ Sufficient context to execute (may need to request more)
-- ✅ Priority and estimate
-- ✅ Consistent with existing terminology
-
-**Quick Bugs**:
-- ✅ User impact documented
-- ✅ Reproducible steps (testable)
-- ✅ Complete environment and context
-- ✅ Severity and priority
-- ✅ Consistent terminology
-
-**Quick Tasks**:
-- ✅ User/business value explained (even if indirect)
-- ✅ Success criteria testable
-- ✅ Complete technical context
-- ✅ Priority with justification
-- ✅ Standard technical terms
-
-**Quick Spikes**:
-- ✅ User/business value of decision to be made
-- ✅ Testable: clear question to answer, deliverable defined
-- ✅ Complete context for research
-- ✅ Time-boxed (priority by urgency)
-- ✅ Consistent terminology
-
----
 
 ## Enforcement
 
@@ -377,21 +343,3 @@ Question: Which term should we use consistently?
 - Development sprint planning
 - Team execution
 - External communication
-
----
-
-## Summary
-
-**The Five Non-Negotiable Principles**:
-
-1. 🎯 **User Value First**: Every piece of work must clearly benefit users
-2. ✅ **Testable Criteria**: All success/acceptance criteria must be objective and measurable
-3. 📚 **Complete Context**: Documents must be self-contained and understandable
-4. 🎚️ **Prioritized Work**: Every item must have priority and realistic estimate
-5. 📖 **Consistent Terminology**: Same terms for same concepts across all docs
-
-**Apply to everything**: PRDs, Plans, Stories, Quick Issues, all workflows, all languages.
-
-**Non-negotiable**: These principles cannot be waived for "speed" or "convenience".
-
-**Quality over quantity**: Better to create fewer documents that follow principles than many that don't.

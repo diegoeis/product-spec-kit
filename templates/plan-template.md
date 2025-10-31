@@ -9,7 +9,7 @@ This template provides structure to create a summary of a plan, detailing the st
 **last_updated**: [YYYY-MM-DD]  
 ---
 
-## Executive Summary
+## Summary
 
 [3-4 sentences: What we're building, Why we are building, how we will solve this  and expected impact]
 

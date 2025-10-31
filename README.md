@@ -17,7 +17,7 @@ A comprehensive framework for creating and managing product documentation with A
 
 ### For New Projects
 1. Start with a PRD using `create-prd`
-2. Generate a release plan with `create-plan`
+2. Generate a release plan with `plan`
 3. Break down into epics and stories
 4. Keep documentation in sync as you build
 
@@ -56,7 +56,7 @@ A comprehensive framework for creating and managing product documentation with A
 
 ### Full Product Lifecycle
 1. **PRD Creation**: `create-prd`
-2. **Release Planning**: `create-plan`
+2. **Release Planning**: `plan`
 3. **Epic Definition**: `create-epic`
 4. **Story Writing**: `create-issue`
 
@@ -232,6 +232,3 @@ This skill evolves based on user needs. Feedback welcome!
 
 Open source - use freely for your product documentation needs.
 
----
-
-**Ready to get started?** Check out [QUICKSTART.md](docs/QUICKSTART.md)!

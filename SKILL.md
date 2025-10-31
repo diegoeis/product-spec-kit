@@ -18,7 +18,7 @@ The documentations need to be made using the same language of the user interacti
 ### Key Capabilities
 
 1. **Create PRDs**: Generate complete Product Requirements Documents using `workflows/create-prd.md` and `templates/prd-template.md`
-2. **Create Plans**: Develop release plans with `workflows/create-plan.md` and `templates/plan-template.md`
+2. **Create Plans**: Develop release plans with `workflows/plan.md` and `templates/plan-template.md`
 3. **Create Epics**: Define major work themes using `workflows/create-epic.md` and `templates/epic-template.md`
 4. **Create Issues**: Generate user stories, tasks, or bugs using `workflows/create-issue.md` and `templates/stories-template.md`
 5. **Clarify Documents**: Improve quality through targeted questions using `workflows/clarify.md`
@@ -159,7 +159,7 @@ For complete workflow details, see: `workflows/create-prd.md`
 
 ---
 
-#### create-plan
+#### plan
 Creates a structured release plan that serves as a bridge between PRDs and detailed specifications.
 
 **Key Outputs**:
@@ -181,7 +181,7 @@ Creates a structured release plan that serves as a bridge between PRDs and detai
 5. Validate with stakeholders
 
 **Template**: `templates/plan-template.md`  
-**Workflow**: `workflows/create-plan.md`
+**Workflow**: `workflows/plan.md`
 
 **When to use:**
 - After PRD is validated

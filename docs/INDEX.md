@@ -28,7 +28,7 @@ Quick reference to all documentation.
 | Template | Purpose | Workflow |
 |----------|---------|----------|
 | [prd-template.md](../templates/prd-template.md) | Product Requirements Document | create-prd |
-| [plan-template.md](../templates/plan-template.md) | Release & Execution Plan | create-plan |
+| [plan-template.md](../templates/plan-template.md) | Release & Execution Plan | plan |
 | [stories-template.md](../templates/stories-template.md) | User Stories Collection | create-stories |
 | [quick-issue-template.md](../templates/quick-issue-template.md) | Quick Issues (Stories, Bugs, Tasks, Spikes) | quick-* |
 | [checklist-template.md](../templates/checklist-template.md) | Quality Validation Checklist | All workflows |
@@ -43,7 +43,7 @@ Quick reference to all documentation.
 |----------|----------------|---------------|
 | **create-prd** | "Create PRD for push notifications" | See [WORKFLOWS.md](WORKFLOWS.md#create-prd) |
 | **clarify-prd** | "Clarify my PRD" | See [WORKFLOWS.md](WORKFLOWS.md#clarify-prd) |
-| **create-plan** | "Create plan from my PRD" | See [WORKFLOWS.md](WORKFLOWS.md#create-plan) |
+| **plan** | "Create plan from my PRD" | See [WORKFLOWS.md](WORKFLOWS.md#plan) |
 | **create-stories** | "Generate stories for first epic" | See [WORKFLOWS.md](WORKFLOWS.md#create-stories) |
 | **clarify-stories** | "Clarify my stories" | See [WORKFLOWS.md](WORKFLOWS.md#clarify-stories) |
 | **analyze** | "Analyze my documentation" | See [WORKFLOWS.md](WORKFLOWS.md#analyze) |

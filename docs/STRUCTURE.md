@@ -122,7 +122,7 @@ Contains all document structure templates that the skill uses to generate docume
 - Risk management
 - Success metrics
 
-**Used by**: `create-plan` workflow
+**Used by**: `plan` workflow
 
 ---
 
@@ -296,7 +296,7 @@ Contains all user-facing documentation.
 |----------|-----------|
 | **create-prd** | SKILL.md, prd-template.md, product-speckit-constitution.md, checklist-template.md |
 | **clarify-prd** | SKILL.md, constitution.md |
-| **create-plan** | SKILL.md, plan-template.md, product-speckit-constitution.md, checklist-template.md |
+| **plan** | SKILL.md, plan-template.md, product-speckit-constitution.md, checklist-template.md |
 | **create-stories** | SKILL.md, stories-template.md, product-speckit-constitution.md, checklist-template.md |
 | **clarify-stories** | SKILL.md, constitution.md |
 | **analyze** | SKILL.md, product-speckit-constitution.md, checklist-template.md |

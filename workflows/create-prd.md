@@ -18,6 +18,7 @@ This workflow guides you through creating a complete Product Requirements Docume
 - Access to any existing product documentation
 - Design mockups or wireframes (if available)
 - Business goals and success metrics
+- On the final output, the PRD need to be in the same language of the user interaction, or the language defined by the user.
 
 ## PRD Types
 
@@ -35,10 +36,9 @@ Create a full PRD only when explicitly requested. The full PRD includes all sect
 ## Steps
 
 ### 1. Initial Setup
-1. Create a new markdown file using the PRD template
+1. Create a new markdown file using the PRD template (if full PRD is requested, use the full template, otherwise use the short template)
 2. Use the following naming convention: `prd-[Product/Feature-Name].md`
 3. Add the PRD header with basic metadata
-4. Determine if creating a short (default) or full PRD based on user request
 
 ### 2. Core PRD Components
 
@@ -149,7 +149,7 @@ Use the PRD template located at: `templates/prd-template.md`
 
 ## Next Steps
 After PRD approval, consider:
-1. Creating a release plan using the `create-plan` workflow
+1. Creating a release plan using the `plan` workflow
 2. Breaking down requirements into user stories with `create-stories`
 3. Scheduling a kickoff meeting with the development team
 
