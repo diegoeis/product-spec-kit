@@ -1,11 +1,31 @@
 ---
-date_modified: 2025-10-30
+date_modified: 2025-10-31
 ---
-# README
+# Product Spec Kit 🚀
 
-Complete framework for Product Managers and Designers to create high-quality product documentation with AI assistance.
+A comprehensive framework for creating and managing product documentation with AI assistance. Perfect for both new projects and existing products, helping teams maintain high-quality specifications from concept to implementation.
+
+## ✨ Why Use This Kit?
+
+- **AI-Powered Documentation**: Leverage AI to create, refine, and maintain your product specifications
+- **Structured Workflows**: Clear processes for every stage of product development
+- **Time-Saving Templates**: Ready-to-use templates for all your documentation needs
+- **Consistent Quality**: Built-in validation ensures high standards across all documents
+- **Seamless Integration**: Works with your existing tools and workflows
 
 ## 🚀 Quick Start
+
+### For New Projects
+1. Start with a PRD using `create-prd`
+2. Generate a release plan with `create-plan`
+3. Break down into epics and stories
+4. Keep documentation in sync as you build
+
+### For Existing Projects
+1. Document current state with quick issues
+2. Fill documentation gaps systematically
+3. Standardize your existing specs
+4. Improve consistency across teams
 
 ### For Full Documentation
 ```
@@ -32,25 +52,37 @@ Complete framework for Product Managers and Designers to create high-quality pro
 → Skill creates time-boxed investigation
 ```
 
-## 📚 Workflows
+## 📚 Core Workflows
 
-### Full Workflows
-1. **create-prd**: Product Requirements Document
-2. **clarify-prd**: Refine PRD with targeted questions
-3. **create-plan**: Release plan with epics and stories
-4. **create-stories**: Detailed user stories
-5. **clarify-stories**: Refine stories
-6. **analyze**: Cross-document consistency check
+### Full Product Lifecycle
+1. **PRD Creation**: `create-prd`
+2. **Release Planning**: `create-plan`
+3. **Epic Definition**: `create-epic`
+4. **Story Writing**: `create-issue`
 
-### Quick Issue Workflows (NEW)
-7. **quick-story**: Standalone user story
-8. **quick-bug**: Bug report
-9. **quick-task**: Technical task
-10. **quick-spike**: Research/investigation
+### Quick Documentation
+- `quick-story`: Single user story
+- `quick-bug`: Bug report
+- `quick-task`: Technical task
+- `quick-spike`: Research task
+
+## 🛠️ Key Features
+
+### For Product Teams
+- Clear documentation hierarchy
+- AI-assisted requirement gathering
+- Consistent formatting and structure
+- Built-in best practices
+
+### For Developers
+- Clear acceptance criteria
+- Technical considerations
+- Integration points
+- Testable requirements
 
 ## 📋 Constitution Principles
 
-All documentation follows 5 non-negotiable principles:
+All documentation follows these non-negotiable principles:
 
 1. **User Value First**: Every piece of work must clearly benefit users
 2. **Testable Criteria**: All acceptance criteria must be objective
@@ -58,7 +90,14 @@ All documentation follows 5 non-negotiable principles:
 4. **Prioritized Work**: Every item needs priority and estimate
 5. **Consistent Terminology**: Same terms across all docs
 
-## 📂 Structure
+## 🌟 Getting the Most from AI
+
+1. **Be Specific**: Provide clear context about your project
+2. **Use Visuals**: Share mockups or diagrams when available
+3. **Iterate**: Use `clarify` to refine outputs
+4. **Validate**: Cross-check AI suggestions with your domain knowledge
+
+## 📂 Project Structure
 
 ```
 product-spec-kit/
@@ -80,24 +119,39 @@ product-spec-kit/
     └── WORKFLOWS.md
 ```
 
-## 🎨 Export Formats
+## 🎨 Export & Integration
 
-Quick issues can export to:
+### Export Formats
 - **Markdown**: Universal format
 - **Jira**: Ready to paste
 - **Linear**: Native format
 - **GitHub Issues**: With labels
 - **Azure DevOps**: Work items
 
+### AI Integration
+- Works with major LLM providers
+- Supports context-aware completions
+- Maintains conversation history
+
 ## 💡 When to Use What
 
-| Scenario | Use This |
-|----------|----------|
-| New major feature | Full workflow (PRD → Plan → Stories) |
+| Scenario | Recommended Workflow |
+|----------|---------------------|
+| New major feature | Full workflow (PRD → Plan → Epics → Stories) |
+| Existing product audit | Start with quick issues, then structure |
 | Bug found | Quick bug |
 | Small improvement | Quick story |
 | Technical debt | Quick task |
 | Research needed | Quick spike |
+| Documentation update | Quick task with PRD reference |
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contribution Guidelines](CONTRIBUTING.md) for details.
+
+---
+
+*Built with ❤️ for product teams who believe in the power of great documentation.*
 | Regular sprint work | Full workflow or quick stories |
 
 ## ✅ Quality Assurance
