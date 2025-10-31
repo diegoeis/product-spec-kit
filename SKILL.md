@@ -13,33 +13,69 @@ A comprehensive skill for Product Managers to create PRDs, release plans, user s
 
 This skill helps Product Managers produce structured, high-quality documentation for product development. It supports both comprehensive documentation workflows (PRD → Plan → Stories) and standalone quick issues (individual stories, tasks, or bugs).
 
+The documentations need to be made using the same language of the user interaction, or the language defined by the user.
+
 ### Key Capabilities
 
-1. **Create PRDs**: Generate complete Product Requirements Documents
-2. **Clarify PRDs**: Ask targeted questions to improve PRD quality
-3. **Create Plans**: Break PRDs into releases, deliveries, epics, and stories
-4. **Create Stories**: Generate detailed user stories with acceptance criteria
-5. **Clarify Stories**: Refine stories through targeted questions
-6. **Quick Issues**: Create standalone stories, tasks, or bugs without full workflow
-7. **Validate All Documents**: Ensure consistency with product principles
+1. **Create PRDs**: Generate complete Product Requirements Documents using `workflows/create-prd.md` and `templates/prd-template.md`
+2. **Create Plans**: Develop release plans with `workflows/create-plan.md` and `templates/plan-template.md`
+3. **Create Epics**: Define major work themes using `workflows/create-epic.md` and `templates/epic-template.md`
+4. **Create Issues**: Generate user stories, tasks, or bugs using `workflows/create-issue.md` and `templates/stories-template.md`
+5. **Clarify Documents**: Improve quality through targeted questions using `workflows/clarify.md`
+6. **Validate All Documents**: Ensure consistency with product principles and templates
 
-### Template files
+### Document Hierarchy & Relationships
 
-- PRD structure: `templates/prd-template.md`
-- Release plan structure: `templates/plan-template.md`
-- User stories structure: `templates/stories-template.md`
-- Quick issue structure: `templates/quick-issue-template.md`
-- Quality checklist: `templates/checklist-template.md`
+#### PRD (Product Requirements Document)
+- **Purpose**: Defines what to build and why
+- **Scope**: Product/feature level
+- **Detail Level**: High-level requirements and goals
+- **Template**: `templates/prd-template.md`
 
-### References, Workflows and Commands
+#### Plan
+- **Purpose**: Organizes work into releases and epics
+- **When to create**: After PRD approval, before detailed specification
+- **Output**: Release structure and high-level timeline
+- **Template**: `templates/plan-template.md`
 
-- To clarify PRD/Stories/Tasks with questions to find gaps `references/clarify.md`
+#### Epics
+- **Purpose**: Groups related user stories that share a common objective
+- **When to create**: 
+  - When multiple stories are needed to deliver a feature
+  - When work spans multiple sprints
+  - When coordinating across teams
+- **Template**: `templates/epic-template.md`
+
+#### Issues (Stories, Tasks, Bugs)
+- **Purpose**: Defines specific, implementable work items
+- **Types**:
+  - **Stories**: User-facing functionality
+  - **Tasks**: Technical or non-functional work
+  - **Bugs**: Issues to be fixed
+- **Template**: `templates/stories-template.md`
+
+### Key Principles
+1. **Progressive Elaboration**:
+   - PRD → Plan → Epics → Stories
+   - Each level adds more detail
+   - Lower levels must align with higher-level documents
+
+2. **Size & Scope**:
+   - PRD: Entire product/feature (weeks/months)
+   - Epic: Major feature component (2-4 weeks)
+   - Story/Task: Small, valuable increment (hours/days)
+
+3. **Value Delivery**:
+   - Every level should deliver observable value
+   - Keep work items small and focused
+   - Ensure traceability to business objectives
+
 
 ---
 
 ## Core Principles (The Constitution)
 
-All documentation must follow these principles (defined in [constitution.md](references/constitution.md)):
+All documentation must follow these principles (defined in `workflows/product-speckit-constitution.md`
 
 ### Principle I: Complete & Unambiguous Requirements
 Every requirement must be clear enough that a reader with no prior context can understand what's needed and why.
@@ -70,88 +106,82 @@ When information is missing or ambiguous:
 ### Full Documentation Workflows
 
 #### create-prd
-Creates a complete Product Requirements Document.
-Follow the template `templates/prd-template.md` 
+Creates a Product Requirements Document following the workflow defined in `workflows/create-prd.md` using the `templates/stories-template.md` template.
 
-By default, always create a short PRD with these minimal options: 
-- TL:DR; (if needed, ask to user these minimal informations)
-- Contexto Summary
+To create a PRD, simply use the command:
+```
+/create-prd
+```
+
+This will guide you through creating a PRD with the appropriate structure and level of detail.
+
+**Key Features:**
+- Creates a short PRD by default (minimal viable documentation)
+- Option to create a full PRD when explicitly requested
+- Follows the template at `templates/prd-template.md`
+- Maintains macro-level acceptance criteria (detailed criteria belong in user stories)
+
+**Default Short PRD Includes:**
+- TL;DR (if sufficient information is available)
+- Context Summary
 - Problem Statement
 - Solution Opportunity
-- Functional Requirements (follow the instructions in `templates/prd-template.md` to see the difference about Requirements in PRD and Stories.)
+- High-level Functional Requirements
 
 **When to use:**
 - Starting a new feature or product
 - Need comprehensive documentation
 - Multiple stakeholders involved
+- Establishing a source of truth for requirements
 
 **Usage:**
 ```
 "I want to create a PRD for [feature description]"
 "Create a product requirements document for [product]"
 "Need a PRD for [initiative]"
+"Create a full PRD for [detailed feature]"
 ```
 
 **Process:**
-1. Asks for: feature/product description, target users, business goals
-2. Requests designs/mockups if not provided
-3. Validates against constitution principles
-4. Offers download and repository integration options
-5. Don't asks micro interactions to create PRD. These micro interactions need to be informed when create stories or tasks.
+1. Determines if creating a short (default) or full PRD
+2. Gathers: feature/product description, target users, business goals
+3. Requests designs/mockups if not provided
+4. Validates against constitution principles
+5. Ensures acceptance criteria remain at macro level
+6. Offers download and repository integration options
 
-Avoid Objectives and success metrics with invented texts like "Get 90+ note in Lighthouse Best Practices and Mobile Friendly". Let the user specify the metrics or indicators.
+**Note on Micro-interactions:**
+- PRDs should not include micro-interactions or UI details
+- These belong in user stories or design documents
+- Focus on business requirements and user value
 
----
-
-#### clarify
-Asks clarifying questions to improve PRD or Stories/Tasks quality.
-Use the instructions described on `references/clarify.md`
-
-**When to use:**
-- After initial PRD/Story/Task/Bug creation
-- PRD/Story/Task/Bug feels incomplete or vague
-- Before moving to planning phase
-
-**Usage:**
-```
-"Clarify my PRD"
-"Clarify my Story or Epic or Task"
-"I have a PRD that needs refinement"
-"Ask questions about my PRD"
-"Ask questions about my Story"
-```
-
-**Process:**
-1. Reads existing PRD or Story/Tasks/Bugs (from file or conversation)
-2. Identifies gaps, ambiguities, edge cases
-3. Generates 5-10 targeted questions
-4. Incorporates answers into updated PRD/Story/Task/Bug
-
-If user asks to clarify stories or tasks, refines stories with clarifying questions. Use the instructions described on `references/clarify.md`
-
-**When to use:**
-- Stories feel incomplete
-- Edge cases not covered
-- Before sprint planning
-
-**Usage:**
-```
-"Clarify my stories"
-"Ask questions about these stories"
-"Refine story [story-id]"
-```
-
-**Process:**
-1. Reviews stories
-2. Identifies missing criteria or ambiguities
-3. Asks targeted questions about designs and flows
-4. Updates stories with new information
+For complete workflow details, see: `workflows/create-prd.md`
 
 ---
 
 #### create-plan
-Creates release plan with roadmap, deliveries, epics, and stories.
-Follow the template `templates/plan-template` 
+Creates a structured release plan that serves as a bridge between PRDs and detailed specifications.
+
+**Key Outputs**:
+- Release structure and timeline
+- High-level epic definitions
+- Dependencies and risks
+- Resource requirements
+
+**When to use**:
+- After PRD approval
+- Before breaking down into epics and stories
+- When aligning multiple teams
+
+**Process**:
+1. Review PRD and requirements
+2. Define release strategy
+3. Identify major epics
+4. Map dependencies
+5. Validate with stakeholders
+
+**Template**: `templates/plan-template.md`  
+**Workflow**: `workflows/create-plan.md`
 
 **When to use:**
 - After PRD is validated
@@ -176,20 +206,45 @@ Follow the template `templates/plan-template`
 
 ---
 
-#### create-stories
-Generates detailed user stories with acceptance criteria.
-Follow the template `templates/stories-template` 
+#### create-epic
+Defines major work themes that group related user stories and tasks.
 
-**When to use:**
-- After plan creation
-- Ready for development sprint
-- Need refined, ready-to-code stories
+**When to use**:
+- Breaking down large features into manageable chunks
+- Coordinating work across multiple teams
+- When multiple stories are needed to deliver value
+
+**Process**:
+1. Define epic scope and objectives
+2. Identify related stories
+3. Set acceptance criteria
+4. Document technical considerations
+
+**Template**: `templates/epic-template.md`  
+**Workflow**: `workflows/create-epic.md`
+
+---
+
+#### create-issue
+Generates detailed user stories, tasks, or bugs with specific acceptance criteria.
+
+**When to use**:
+- Implementing a specific piece of functionality (Story)
+- Technical or maintenance work (Task)
+- Reporting and fixing issues (Bug)
+- When you need detailed, testable specifications
+
+**Key Characteristics**:
+- Small, independent units of work
+- Clear acceptance criteria
+- Directly tied to user value or technical need
 
 **Usage:**
 ```
 "Create stories from my plan"
 "Generate user stories for [epic]"
 "I need detailed stories for development"
+"Create a bug with these beahviour"
 ```
 
 **Process:**
@@ -200,12 +255,99 @@ Follow the template `templates/stories-template`
 5. Adds technical notes when needed
 6. Validates against constitution
 
-**Important**: Stories should reference specific UI elements, user flows, and interactions visible in designs.
+---
 
+#### clarify
+Asks clarifying questions to improve PRD or Stories/Tasks quality.
+Use the instructions described on `references/clarify.md`. 
+
+To clarify something, simply use the command:
+```
+/clarify [PRD/Story/Task/Bug]
+```
+
+**When to use:**
+- After initial PRD/Story/Task/Bug creation
+- PRD/Story/Task/Bug feels incomplete or vague
+- Before moving to planning phase
+
+**Usage:**
+```
+"Clarify my PRD"
+"Clarify my Story or Epic or Task"
+"I have a PRD that needs refinement"
+"Ask questions about my PRD"
+"Ask questions about my Story"
+```
+
+**Process:**
+1. Reads existing PRD or Story/Tasks/Bugs (from file or conversation)
+2. Identifies gaps, ambiguities, edge cases
+3. Generates 5-10 targeted questions
+4. Incorporates answers into updated PRD/Story/Task/Bug
+
+##### To clarify issues
+If user asks to clarify stories or tasks, refines stories with clarifying questions. Use the instructions described on `references/clarify.md`
+
+**When to use:**
+- Stories feel incomplete
+- Edge cases not covered
+- Before sprint planning
+
+**Usage:**
+```
+"Clarify my stories"
+"Ask questions about these stories"
+"Refine story [story-id]"
+```
+
+**Process:**
+1. Reviews stories
+2. Identifies missing criteria or ambiguities
+3. Asks targeted questions about designs and flows
+4. Updates stories with new information
 
 ---
 
 ### Quick Issue Workflows
+
+#### create-issue
+Create a standalone issue (story, task, or bug) using the `workflows/create-issue.md` workflow and `templates/stories-template.md`.
+
+To create an issue, use the command:
+```
+/create-issue
+```
+
+This will guide you through creating a well-structured issue with all necessary components, following our standardized format.
+
+**When to use:**
+- Small, isolated features
+- Design-first approach with existing mockups
+- Clear scope without needing full PRD
+
+**Usage:**
+```
+"Create an issue for [feature description]"
+"I need an issue for [description]"
+"Create an issue: [what user wants to do]"
+```
+
+**Process:**
+1. User provides: brief description + designs/mockups
+2. **Skill requests designs** if not provided
+3. Asks context questions (users, goals, edge cases)
+4. Requests links to related PRDs/docs if available
+5. Generates complete issue with:
+   - Issue format
+   - **Design-based acceptance criteria**
+   - Technical notes
+   - Definition of Done
+6. Validates against constitution
+
+**Output**: Single issue ready for development
+
+---
 
 #### quick-story
 Creates a standalone user story without full PRD/Plan workflow.
@@ -293,8 +435,8 @@ Creates a standalone bug report with reproduction steps.
    - Reproduction steps
    - Expected behavior
    - Actual behavior
-   - Acceptance criteria for fix
-5. Validates against constitution
+   - Acceptance criteria for fix (follow the same story acceptance criteria format)
+1. Validates against constitution
 
 **Output**: Single bug ready for triage/fixing
 
@@ -344,9 +486,22 @@ Always verify if the user have some MCP installed to connect to Figma.
 
 ## Acceptance Criteria Format
 
-### For PRDs (Macro-Level)
+Remember the format of the criteria format for PRD and Stories/Tasks when use `templates/prd-template.md`, `templates/quick-issue-template.md` and `templates/stories-template.md`
 
-Focus on general rules and high-level requirements:
+### Document-Specific Acceptance Criteria
+
+#### For PRDs (Macro-Level)
+Focus on the "what" and "why":
+- Define overall product capabilities
+- Set business rules and constraints
+- Establish success metrics
+
+#### For Epics (Mid-Level)
+Bridge between strategy and implementation:
+- Define feature-level requirements
+- Set boundaries for related stories
+- Include integration points
+- Define non-functional requirements
 
 ```markdown
 #### Must Have (P0)
@@ -383,8 +538,24 @@ Focus on specific, testable behaviors based on designs:
 ```
 
 **Note the difference:**
-- PRD: "System must support authentication" (what, why)
-- Story: "When user clicks 'Login' button..." (specific, testable, design-based)
+- PRD/Epics: "System must support authentication" (what, why)
+- Stories: "When user clicks 'Login' button..." (specific, testable, design-based)
+
+**Progressive Detailing**:
+1. **PRD (Why)**: "System must support user authentication to protect user data"
+2. **Epic (What)**: "Implement authentication system with email/password and social login"
+3. **Story (How)**: "As a user, I can log in with my email and password so I can access my account"
+4. **Acceptance Criteria**: 
+   ```
+   When I enter a valid email and password and click 'Login',
+   Then I should be redirected to my dashboard
+   And see a success message
+   ```
+
+**Key Differences**:
+- **PRD**: Business objectives and high-level requirements
+- **Epic**: Feature-level scope and technical approach
+- **Story/Task**: Specific implementation details and UI behavior
 
 ---
 
@@ -479,46 +650,17 @@ Focus on specific, testable behaviors based on designs:
 
 ## File Structure
 
-```
-product-spec-kit/
-├── SKILL.md                    # This file - main documentation
-├── README.md                   # User-facing overview
-├── CHANGELOG.md                # Version history
-├── templates/
-│   ├── prd-template.md        # PRD structure
-│   ├── plan-template.md       # Release plan structure
-│   ├── stories-template.md    # User stories structure
-│   ├── quick-issue-template.md # Quick issue structure
-│   └── checklist-template.md  # Quality checklist
-├── memory/
-│   └── constitution.md        # Core principles (Principles I-V)
-├── examples/
-│   └── (examples)
-└── docs/
-    ├── QUICKSTART.md          # Getting started guide
-    ├── INSTALL.md             # Installation instructions
-    ├── WORKFLOWS.md           # Detailed workflow guide
-    ├── INDEX.md               # Master documentation index
-    └── STRUCTURE.md           # File structure details
-```
+See `docs/STRUCTURE.md` for complete file structure details.
 
 ---
-
-## Version History
-
-- **v1.0** (2025-10-30): Initial release with full workflow
-
----
-
 ## Getting Started
 
 **First time users:**
-1. Read the [QUICKSTART.md](docs/QUICKSTART.md) guide
-2. Review [constitution.md](memory/constitution.md) principles
-3. Try creating a quick story with designs
+1. Read the `docs/QUICKSTART.md` guide
+2. Review `rules/product-speckit-constitution.md` principles
+3. Try creating a quick story using designs provided by user
 4. Progress to full PRD when ready
 
 **Need help?**
-- See [WORKFLOWS.md](docs/WORKFLOWS.md) for detailed process guides
-- Check [INDEX.md](docs/INDEX.md) for complete documentation reference
-- Review [STRUCTURE.md](docs/STRUCTURE.md) to understand file organization
+- Check `docs/INDEX.md` for complete documentation reference
+- Review `docs/STRUCTURE.md` to understand file organization
