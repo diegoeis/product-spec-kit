@@ -19,12 +19,18 @@ product-spec-kit/
 │   ├── quick-issue-template.md      # Quick issues (stories/bugs/tasks/spikes)
 │   └── checklist-template.md        # Quality validation checklist
 │
+├── rules/
+│   └── product-speckit-constitution.md        # Core principles
+│
+├── workflows/
+│   └── clarify.md        # Clarify PRD/Issues workflow
+│
 ├── references/                           # Core principles and rules
 │   └── constitution.md              # 5 non-negotiable principles
 │   └── clarify.md              # Questions to clarify PRD/Story/Tasks
 │
 ├── examples/                         # Sample documents
-│   └── prd-example.md               # Complete PRD example
+│   └── (examples)
 │
 └── docs/                            # Documentation
     ├── QUICKSTART.md                # 5-minute getting started guide
@@ -166,7 +172,7 @@ Contains all document structure templates that the skill uses to generate docume
 
 ---
 
-### references/ Directory
+### rules/ Directory
 
 Contains core principles and rules that govern all documentation.
 
@@ -288,12 +294,12 @@ Contains all user-facing documentation.
 
 | Workflow | Files Used |
 |----------|-----------|
-| **create-prd** | SKILL.md, prd-template.md, constitution.md, checklist-template.md |
+| **create-prd** | SKILL.md, prd-template.md, product-speckit-constitution.md, checklist-template.md |
 | **clarify-prd** | SKILL.md, constitution.md |
-| **create-plan** | SKILL.md, plan-template.md, constitution.md, checklist-template.md |
-| **create-stories** | SKILL.md, stories-template.md, constitution.md, checklist-template.md |
+| **create-plan** | SKILL.md, plan-template.md, product-speckit-constitution.md, checklist-template.md |
+| **create-stories** | SKILL.md, stories-template.md, product-speckit-constitution.md, checklist-template.md |
 | **clarify-stories** | SKILL.md, constitution.md |
-| **analyze** | SKILL.md, constitution.md, checklist-template.md |
+| **analyze** | SKILL.md, product-speckit-constitution.md, checklist-template.md |
 | **quick-story** | SKILL.md, quick-issue-template.md, constitution.md |
 | **quick-bug** | SKILL.md, quick-issue-template.md, constitution.md |
 | **quick-task** | SKILL.md, quick-issue-template.md, constitution.md |

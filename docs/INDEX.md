@@ -21,7 +21,7 @@ Quick reference to all documentation.
 
 | Document | Description |
 |----------|-------------|
-| [constitution.md](../memory/constitution.md) | 5 non-negotiable principles for all documentation |
+| [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md) | 5 non-negotiable principles for all documentation |
 
 ### Templates
 
@@ -75,7 +75,7 @@ Quick reference to all documentation.
 
 | Topic | Location |
 |-------|----------|
-| **5 Constitution Principles** | [constitution.md](../memory/constitution.md#core-principles) |
+| **5 Constitution Principles** | [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md#core-principles) |
 | **When to Use What** | [README.md](../README.md#-when-to-use-what) |
 | **Export Formats** | [README.md](../README.md#-export-formats) |
 | **Troubleshooting** | [README.md](../README.md#-troubleshooting) |
@@ -101,7 +101,7 @@ product-spec-kit/
 ├── README.md             # Overview & quick start
 ├── CHANGELOG.md          # Version history
 ├── templates/            # Document templates
-├── memory/              # Core principles
+├── rules/              # Core principles
 ├── examples/            # Sample documents
 └── docs/                # Documentation
     ├── QUICKSTART.md    # 5-minute guide
@@ -138,7 +138,7 @@ Full changelog: [CHANGELOG.md](../CHANGELOG.md)
 | **Create my first PRD** | [WORKFLOWS.md](WORKFLOWS.md#create-prd) |
 | **Create a quick story** | [WORKFLOWS.md](WORKFLOWS.md#quick-story) |
 | **Document a bug** | [WORKFLOWS.md](WORKFLOWS.md#quick-bug) |
-| **Understand the principles** | [constitution.md](../memory/constitution.md) |
+| **Understand the principles** | [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md) |
 | **See examples** | [examples/](../examples/) |
 | **Troubleshoot issues** | [INSTALL.md](INSTALL.md#common-installation-issues) |
 | **Check version history** | [CHANGELOG.md](../CHANGELOG.md) |
@@ -156,7 +156,7 @@ Full changelog: [CHANGELOG.md](../CHANGELOG.md)
 
 ### Best Practices
 
-- **Always start with**: [constitution.md](../memory/constitution.md)
+- **Always start with**: [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md)
 - **When in doubt**: Use [QUICKSTART.md](QUICKSTART.md)
 - **For detailed guidance**: See [WORKFLOWS.md](WORKFLOWS.md)
 
@@ -196,7 +196,7 @@ Full changelog: [CHANGELOG.md](../CHANGELOG.md)
 1. Read [README.md](../README.md)
 2. Follow [QUICKSTART.md](QUICKSTART.md)
 3. Create your first quick story
-4. Review [constitution.md](../memory/constitution.md)
+4. Review [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md)
 
 ### Intermediate (Week 1)
 
@@ -219,11 +219,11 @@ Full changelog: [CHANGELOG.md](../CHANGELOG.md)
 Found an issue? Have a suggestion? 
 
 - Check [CHANGELOG.md](../CHANGELOG.md) for planned features
-- Review [constitution.md](../memory/constitution.md) for principles
+- Review [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md) for principles
 - See [README.md](../README.md) for contact info
 
 ---
 
 **Last Updated**: 2025-10-30  
-**Version**: 2.0.0  
+**Version**: 1.0.0  
 **Skill Name**: Product Spec Kit

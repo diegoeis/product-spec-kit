@@ -195,7 +195,7 @@ Claude: [creates time-boxed investigation with clear deliverables]
 
 - Read [README.md](../README.md) for complete overview
 - Check [WORKFLOWS.md](WORKFLOWS.md) for detailed guides
-- Review [constitution.md](../memory/constitution.md) for principles
+- Review [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md) for principles
 - See [examples](../examples/) for inspiration
 
 ---
@@ -203,7 +203,7 @@ Claude: [creates time-boxed investigation with clear deliverables]
 ## Need Help?
 
 - Check [README Troubleshooting](../README.md#-troubleshooting)
-- Review [constitution principles](../memory/constitution.md)
+- Review [constitution principles](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md)
 - Look at [templates](../templates/) for format examples
 
 **Happy documenting!** 🎉

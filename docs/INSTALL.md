@@ -333,7 +333,7 @@ Once installed successfully:
 
 1. Read [QUICKSTART.md](QUICKSTART.md) for first steps
 2. Review [WORKFLOWS.md](WORKFLOWS.md) for detailed guides
-3. Check [constitution.md](../memory/constitution.md) for principles
+3. Check [product-speckit-constitution.md](prompts/my-skills/product-spec-kit/rules/product-speckit-constitution.md) for principles
 4. Try creating your first quick story!
 
 ---
