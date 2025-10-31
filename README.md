@@ -1,9 +1,12 @@
 ---
 date_modified: 2025-10-31
 ---
+
 # Product Spec Kit 🚀
 
 A comprehensive framework for creating and managing product documentation with AI assistance. Perfect for both new projects and existing products, helping teams maintain high-quality specifications from concept to implementation.
+
+This focus on product specification phase, usually made by Product Managers and Designers. We will focus in the upstream track, to give more power to PMs, Designers and other people that need to create specifications to use with AI or for common process.
 
 ## ✨ Why Use This Kit?
 
@@ -227,6 +230,9 @@ See [examples/](examples/) for complete examples.
 ## 🤝 Contributing
 
 This skill evolves based on user needs. Feedback welcome!
+
+And so many thanks for [spec-kit](https://github.com/github/spec-kit) people. This project was inspired by their work.
+
 
 ## 📄 License
 

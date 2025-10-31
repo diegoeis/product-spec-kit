@@ -19,9 +19,35 @@ This workflow takes a plan file and generates the corresponding epics and user s
 - Access to any relevant design documents or mockups
 - Understanding of the product's technical constraints
 
+## Handling Missing PRD
+
+If a PRD is not available, the workflow will guide you through creating essential PRD elements before proceeding. This ensures all generated artifacts have the necessary context.
+
+### When PRD is Missing:
+
+1. **Gather Key Information**
+   - What the Problem or Opportunity is
+   - The solution description
+   - Target users and their needs
+   - Technical constraints
+
+2. **Create Mini-PRD**
+   If no PRD exists, the workflow will prompt for:
+   ```
+   [Product Name]
+   - Purpose: [Brief description of what the product does]
+   - Target Users: [Who will use this product]
+   - Key Goals: [Main objectives of the product]
+   ```
+
+3. **Validation**
+   - Review generated artifacts carefully
+   - Note any assumptions made
+   - Plan to create a full PRD when possible
+
 ## Input
 - **Plan File**: Path to the plan file to process
-- **PRD Context**: Reference to the related PRD (optional but recommended)
+- **PRD Context**: Reference to the related PRD (when exists, optional but recommended)
 - **Output Directory**: Where to generate the specifications (default: `specs/[prd-name]/`)
 
 ## Process
