@@ -14,6 +14,30 @@ This workflow guides you through creating issues (story, task, or bug) related o
 - Creating a technical or non-functional task
 - When you need to quickly capture work without full documentation
 
+## Output
+- **File Location**: 
+  - For epic-related issues: `specs/[prd-name]/[epic-name]/[issue-type]-[short-description].md`
+  - For standalone issues: `specs/[prd-name]/[issue-type]-[short-description].md`
+- **Directory Structure**:
+  ```
+  specs/
+  └── [prd-name]/
+      │
+      ├── [epic-name-1]/        # If part of an epic
+      │   ├── [epic-name-1].md  # Epic document
+      │   ├── story-*.md        # User stories
+      │   ├── bug-*.md          # Bug reports
+      │   └── task-*.md         # Technical tasks
+      │
+      └── story-standalone.md   # If not part of an epic
+  ```
+- **Fallback**: If file system access is not available, the issue content will be displayed for manual copying
+- **Naming Conventions**:
+  - **User Stories**: `story-short-description.md` (e.g., `story-user-login.md`)
+  - **Bug Reports**: `bug-short-description.md` (e.g., `bug-login-error.md`)
+  - **Technical Tasks**: `task-short-description.md` (e.g., `task-update-dependencies.md`)
+  - **Research Spikes**: `spike-topic.md` (e.g., `spike-auth-providers.md`)
+
 ## Prerequisites
 - Basic understanding of the issue to be created
 - Any relevant context or background information

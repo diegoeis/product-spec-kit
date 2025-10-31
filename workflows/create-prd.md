@@ -13,6 +13,11 @@ This workflow guides you through creating a complete Product Requirements Docume
 - When multiple stakeholders are involved
 - As a source of truth for product development
 
+## Output
+- **File Location**: `specs/prds/[prd-name].md`
+- **Fallback**: If file system access is not available, the PRD content will be displayed for manual copying
+- **Naming Convention**: Use kebab-case for the PRD filename based on the feature/product name
+
 ## Prerequisites
 - Basic understanding of the product/feature
 - Access to any existing product documentation

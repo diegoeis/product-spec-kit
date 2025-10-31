@@ -13,6 +13,43 @@ This workflow guides you through creating a structured product release plan usin
 - To align stakeholders on release strategy and timing
 - When you need to sequence work across multiple teams
 
+## Output Structure
+```
+specs/
+├── [prd-name]/               # PRD directory (kebab-case)
+│   ├── [prd-name].md         # PRD document
+│   ├── [plan-name].md        # This plan document
+│   │
+│   ├── [epic-name-1]/        # Epic 1 directory
+│   │   ├── [epic-name-1].md  # Epic 1 document
+│   │   ├── story-*.md        # Stories for this epic
+│   │   ├── bug-*.md          # Bugs for this epic
+│   │   └── task-*.md         # Tasks for this epic
+│   │
+│   ├── [epic-name-2]/        # Epic 2 directory
+│   │   ├── [epic-name-2].md  # Epic 2 document
+│   │   └── ...               # Related stories/tasks
+│   │
+│   └── [standalone-story].md # Standalone story not part of an epic
+│
+└── [another-prd-name]/       # Another PRD directory
+    └── ...                   # With its own structure
+```
+
+### File Naming Conventions
+- **PRD File**: `[prd-name].md` (same as directory name)
+- **Plan File**: `[plan-name].md` (descriptive name of the plan)
+- **Epic Directory**: `epic-name` (kebab-case, descriptive)
+- **Epic File**: `[epic-name].md` (same as directory name)
+- **Story/Task Files**: 
+  - `story-[short-description].md`
+  - `bug-[short-description].md`
+  - `task-[short-description].md`
+  - `spike-[short-description].md`
+
+### Fallback Behavior
+If file system access is not available, the content will be displayed for manual copying with the appropriate directory structure shown in comments.
+
 ## Prerequisites
 - Approved PRD or clear product requirements
 - Understanding of business priorities and constraints

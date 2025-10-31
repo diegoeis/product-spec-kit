@@ -24,6 +24,49 @@ The documentations need to be made using the same language of the user interacti
 5. **Clarify Documents**: Improve quality through targeted questions using `workflows/clarify.md`
 6. **Validate All Documents**: Ensure consistency with product principles and templates
 
+### File Output Behavior
+
+All generated documents will be saved in a structured `specs` directory following this organization:
+
+```
+specs/
+├── [prd-name]/               # PRD directory (kebab-case)
+│   ├── [prd-name].md         # PRD document
+│   ├── [plan-name].md        # Release plan document
+│   │
+│   ├── [epic-name-1]/        # Epic 1 directory (kebab-case)
+│   │   ├── [epic-name-1].md  # Epic 1 document
+│   │   ├── story-user-login.md
+│   │   ├── story-user-logout.md
+│   │   └── bug-login-error.md
+│   │
+│   ├── [epic-name-2]/        # Epic 2 directory
+│   │   ├── [epic-name-2].md  # Epic 2 document
+│   │   ├── story-admin-dashboard.md
+│   │   └── task-setup-database.md
+│   │
+│   └── [standalone-story].md # Standalone story not part of an epic
+│   
+└── [another-prd-name]/       # Another PRD directory
+    └── ...                   # With its own structure
+```
+
+#### Naming Conventions
+- **PRD Directory**: `prd-name` (kebab-case)
+- **PRD File**: `[prd-name].md` (same as directory name)
+- **Plan File**: `[plan-name].md` (descriptive name of the plan)
+- **Epic Directory**: `epic-name` (kebab-case, descriptive)
+- **Epic File**: `[epic-name].md` (same as directory name)
+- **Story/Task Files**: 
+  - User stories: `story-[short-description].md`
+  - Bug reports: `bug-[short-description].md`
+  - Technical tasks: `task-[short-description].md`
+  - Research spikes: `spike-[short-description].md`
+- **All files and directories** should use kebab-case (lowercase with hyphens)
+
+#### Fallback Behavior
+If the environment doesn't support file system operations, the generated content will be displayed for manual copying and saving in the appropriate directory structure.
+
 ### Document Hierarchy & Relationships
 
 #### PRD (Product Requirements Document)

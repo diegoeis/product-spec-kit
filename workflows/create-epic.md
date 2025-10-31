@@ -13,6 +13,25 @@ This workflow guides you through creating an Epic using the `templates/epic-temp
 - When work needs to be tracked at a higher level than individual stories
 - When coordinating work across multiple teams
 
+## Output
+- **File Location**: `specs/[prd-name]/[epic-name]/[epic-name].md`
+- **Directory Structure**:
+  ```
+  specs/
+  └── [prd-name]/
+      └── [epic-name]/
+          ├── [epic-name].md     # This epic document
+          ├── story-*.md         # Related user stories
+          ├── bug-*.md           # Related bugs
+          └── task-*.md          # Related tasks
+  ```
+- **Fallback**: If file system access is not available, the Epic content will be displayed for manual copying
+- **Naming Conventions**:
+  - **Epic Directory/File**: `epic-name` (kebab-case, descriptive)
+  - **Story Files**: `story-short-description.md`
+  - **Bug Files**: `bug-short-description.md`
+  - **Task Files**: `task-short-description.md`
+
 ## Prerequisites
 - Clear understanding of the feature or functionality
 - Related PRD or product requirements
