@@ -1,6 +1,8 @@
 ---
 description: Workflow for creating a comprehensive Product Requirements Document (PRD) following product management best practices.
 auto_execution_mode: 1
+date_modified: 2025-11-06T16:44:21.407-03:00
+edited_seconds: 226
 ---
 
 # Create PRD Workflow
@@ -17,7 +19,7 @@ This workflow guides you through creating a complete Product Requirements Docume
 - **File Location**: `specs/prds/[prd-name].md`
 - **Fallback**: If file system access is not available, the PRD content will be displayed for manual copying
 - **Naming Convention**: Use kebab-case for the PRD filename based on the feature/product name
-
+- **Template**: use `templates/prd-template.md` to create this PRD. Use the short-prd version.
 ## Prerequisites
 - Basic understanding of the product/feature
 - Access to any existing product documentation
@@ -49,17 +51,21 @@ Create a full PRD only when explicitly requested. The full PRD includes all sect
 
 #### For Short PRD (Default)
 Include these essential sections:
-- **TL;DR**: Brief 2-3 sentence summary
-- **Context Summary**: Background and business objectives
-- **Problem Statement**: Clear definition of the problem
-- **Solution Opportunity**: High-level solution overview
-- **Functional Requirements**: High-level features only
+- **TL;DR**: Brief summary in three major bullet points and sub points following:
+    - **Why** to solve
+    - **What** to solve 
+    - **How** to solve
+- **Context Summary**: Background and client objectives. Expand the WHY to solve of TL;DR
+- **Problem Statement**: Clear definition of the problem. Extending the problem in WHY to solve in TL;DR
+- **Solution Opportunity**: High-level solution overview expanding WHAT to solve and HOW to solve
+- **Functional Requirements**: High-level user and features behaviour only... Without micro actions or interactions and non-functional requirements
+- **Next evolutions:** Describing what we will not delivery right now, but it is planned in future.
 
 #### For Full PRD (When Requested)
 Include all sections from the PRD template:
 
 #### TL;DR (Executive Summary)
-- Brief 2-3 sentence summary of the PRD
+- Brief 2-3 sentence summary of the PRD, following the `templates/prd-template.md`
 - Include the problem being solved and the proposed solution
 - Highlight business impact and key metrics (only if provided by user)
 - **Note**: For short PRDs, this section is optional and only included if sufficient information is available
@@ -134,14 +140,6 @@ In addition to the standard validation, ensure PRD acceptance criteria:
 4. Add version history
 
 ## PRD-Specific Best Practices
-
-### For Acceptance Criteria
-- **Keep it high-level**: Focus on the 'what', not the 'how'
-- **Be concise**: One clear requirement per line
-- **Use active voice**: "System must..." or "User can..."
-- **Avoid ambiguity**: Clear, measurable outcomes
-- **Defer details**: Save micro-interactions for user stories
-
 ### General PRD Guidelines
 - Keep it concise but complete
 - Use visual aids (diagrams, mockups) when helpful
@@ -154,9 +152,8 @@ Use the PRD template located at: `templates/prd-template.md`
 
 ## Next Steps
 After PRD approval, consider:
-1. Creating a release plan using the `plan` workflow
+1. Creating a roadmap plan using the `plan` workflow
 2. Breaking down requirements into user stories with `create-stories`
-3. Scheduling a kickoff meeting with the development team
 
 ## Common Pitfalls to Avoid
 - Writing requirements that are too detailed (save for stories)

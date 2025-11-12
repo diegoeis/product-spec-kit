@@ -1,3 +1,7 @@
+---
+date_modified: 2025-11-07T13:29:34.543-03:00
+edited_seconds: 0
+---
 # prd-template
 
 This template provides structure to create PRD giving all details the AI Workflows or human devs need to build something with clear context, scope, acceptance criteria, dependencies, and constitution validation.
@@ -159,8 +163,6 @@ Starting with metadata:
 ### Wireframes/Mockups
 - [Link to design file 1]
 - [Link to design file 2]
-
-
 
 ## Scope & Boundaries
 
