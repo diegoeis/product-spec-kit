@@ -1,8 +1,6 @@
 ---
 description: Workflow for creating a comprehensive Product Requirements Document (PRD) following product management best practices.
 auto_execution_mode: 1
-date_modified: 2025-11-06T16:44:21.407-03:00
-edited_seconds: 226
 ---
 
 # Create PRD Workflow
