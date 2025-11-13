@@ -32,12 +32,41 @@ This epic is just considered done when those related stories are done.
 - [Technical note 1]
 - [Technical note 2]
 
+
+### Quality Assurance
+
+#### Testing Strategy
+
+**Unit Testing**:
+- [Coverage target]
+
+**Integration Testing**:
+- [Scope]
+- [Timeline]
+
+**User Acceptance Testing**:
+- [Who]
+- [When]
+- [Criteria]
+
+**Performance Testing**:
+- [Metrics]
+- [Targets]
+
+#### Definition of Done (Per Story)
+
+- [ ] Code complete and reviewed
+- [ ] Unit tests written and passing
+- [ ] Integration tests passing
+- [ ] Documentation updated
+- [ ] Design review approved
+- [ ] Product owner accepted
+- [ ] Deployed to staging
+- [ ] QA signed off
+
 ### Design Assets
 - [Link to mockups]
 - [Link to prototypes]
 
-### Testing Strategy
-- [How we'll test this epic]
-
-### Rollout Plan
-- [How we'll release to users]
+#### Rollout Plan
+- [How we'll release to users and the communication plan]

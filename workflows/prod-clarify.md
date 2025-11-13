@@ -19,7 +19,9 @@ Note: This clarification workflow is expected to run (and be completed) BEFORE t
 
 Execution steps:
 
-1. Load the current spec file. Perform a structured ambiguity & coverage scan using this taxonomy. For each category, mark status: Clear / Partial / Missing. Produce an internal coverage map used for prioritization (do not output raw map unless no questions will be asked).
+1. Load the current spec file. Perform a structured ambiguity & coverage scan using this taxonomy. For each category, mark status: Clear / Partial / Missing. Produce an internal coverage map used for prioritization (do not output raw map unless no questions will be asked). Analyze the spec file and perform a coverage just with the items that are included in the user specification. 
+
+In the final of the process, asks for the user to confirm the clarification and suggest create and clarify the missing items. 
 
    Functional Scope & Behavior:
    - Core user goals & success criteria

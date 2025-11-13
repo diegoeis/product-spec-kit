@@ -7,6 +7,8 @@ description: non-negotiable principles to maintain patterns and govern all docum
 
 These are the **non-negotiable principles** that govern all product documentation created with this skill. These principles apply regardless of language, workflow type (full or quick), or document format.
 
+Always use the language of the user interaction to create the final files, including headings and default content of templates. If the user explicitly requests a different language, use it.
+
 ---
 
 ## Core Principles

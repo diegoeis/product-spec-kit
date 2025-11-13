@@ -3,13 +3,14 @@ description: Workflow for creating a product release plan using the plan templat
 auto_execution_mode: 1
 ---
 
-# Create Plan Workflow
+# Breakdown Specs Workflow
 
-This workflow guides you through creating a structured product release plan using the `templates/plan-template.md`. The plan organizes work into releases and epics, providing a high-level roadmap for product development.
+This workflow guides you through creating a structured product release plan using the `templates/prod-breakdown-template.md`. This plan is used to break down a large initiative into manageable chunks, providing a high-level roadmap for product development.
 
 ## When to Use
 - After PRD approval and before development begins
 - When you need to break down a large initiative into manageable chunks
+- When you need to break down a large epic into stories / tasks
 - To align stakeholders on release strategy and timing
 - When you need to sequence work across multiple teams
 
@@ -44,15 +45,16 @@ This workflow guides you through creating a structured product release plan usin
 - Include acceptance criteria and technical considerations
 
 ### 5. Dependencies & Risks
+- Suggest the creation of this section in next steps after finalizing the breakdown
 - Technical or cross-team dependencies
 - Potential risks and mitigation strategies
 - Resource requirements and constraints
 
-## Steps to Create a Plan
+## Steps to Create a breakdown
 
 ### 1. Initial Setup
-1. Create a new markdown file using `templates/plan-template.md`
-2. Use the naming convention: `plan-[initiative-name].md`
+1. Create a new markdown file using `templates/prod-breakdown-template.md`
+2. Use the naming convention: `{initiative-name}-breakdown-plan.md`
 3. Fill in the document metadata
 
 ### 2. Define Releases
@@ -61,6 +63,8 @@ This workflow guides you through creating a structured product release plan usin
    - Define the goal and objectives
    - Identify key epics
    - Set high-level timeline expectations
+3. Define the dates for releases, epics and stories based in throughput, velocity or leadtime provided by the user. If user provide those data, calculate based on it. If not, asks to user to provide the date ranges.
+4. Asks to user to confirm the relationship between releases, epics and stories.
 
 ### 3. Break Down Epics
 1. For each epic:
@@ -68,6 +72,7 @@ This workflow guides you through creating a structured product release plan usin
    - List high-level acceptance criteria
    - Identify related stories (can be placeholders)
    - Note any technical considerations
+   - The goals need to be clear and achievable based on user journey and behavior, not the tech details.
 
 ### 4. Identify Dependencies
 1. Map dependencies between epics and releases
@@ -97,17 +102,16 @@ This workflow guides you through creating a structured product release plan usin
 - Not planning for user feedback cycles
 
 ## Template
-Use the plan template located at: `templates/plan-template.md`
+Use the plan template located at: `templates/prod-breakdown-template.md`
 
 ## Integration with Other Workflows
 - **PRD**: This plan should align with the approved PRD
-- **Epics**: Use `templates/epic-template.md` for detailed epic documentation
-- **Stories**: Use `templates/stories-template.md` for detailed story writing
-- **Issues**: Track progress using the issue tracking system
+- **Epics**: Use `templates/prod-epic-template.md` for detailed epic documentation
+- **Stories**: Use `templates/prod-story-template.md` for detailed story writing
+- **Tasks**: Use `templates/prod-story-template.md` for detailed task writing
 
-## Next Steps After Creating a Plan
-1. Review with key stakeholders
+## Next Steps After Creating this breakdown
+1. Build epic files with detailed stories
 2. Refine based on feedback
-3. Break down epics into detailed stories
-4. Create a tracking system for progress
-5. Schedule regular check-ins to update the plan as needed
+3. Create the Dependency Matrix section
+4. Create the Risk Management section

@@ -7,7 +7,7 @@ description: Comprehensive skill for Product Managers to create organize and man
 
 This skill helps Product Managers produce structured, high-quality documentation for product development. It supports both comprehensive documentation workflows (PRD → Plan → Stories) and standalone quick issues (individual stories, tasks, or bugs).
 
-The documentations need to be made using the same language of the user interaction, or the language defined by the user.
+Always use the language of the user interaction to create the final files, including headings and default content of templates. If the user explicitly requests a different language, use it.
 
 ### Core Principles Constitution
 
@@ -35,7 +35,22 @@ When information is missing or ambiguous:
 - Mark uncertain items for validation
 - Wait for confirmation before finalizing
 
-## How to start
+## Workflows or Commands
 
+*Starting the interaction - how to start a new specification*
 When the user want to start a new specification, use the `workflows/start.md` instructions.
 
+*Creating a PRD*
+When the user want to create a PRD, use the `workflows/prod-spec-prd.md` instructions.
+
+*Clarifying an specification*
+When the user want to clarify an specification (such as PRD, Plan, Story, Task or Bug), use the `workflows/prod-clarify.md` instructions. If the user doesn't provide an existing specification, ask for it.
+
+*Breakdown specs*
+When the user want to break the PRD in smaller parts such as Epics -> Stories / Tasks, use the `workflows/prod-spec-breakdown.md` instructions. You need to validate an existing PRD or create the PRD before breaking it down. If the user doesn't provide an existing PRD, ask for it.
+
+*Creating a Story*
+When the user want to create a story, use the `workflows/prod-spec-story.md` instructions.
+
+*Creating a Task*
+When the user want to create a task, use the `workflows/prod-spec-task.md` instructions.

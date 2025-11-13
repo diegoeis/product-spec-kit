@@ -6,7 +6,9 @@ date_modified: 2025-10-31
 
 A comprehensive framework for creating and managing product documentation with AI assistance. Perfect for both new projects and existing products, helping teams maintain high-quality specifications from concept to implementation.
 
-This focus on product specification phase, usually made by Product Managers and Designers. We will focus in the upstream track, to give more power to PMs, Designers and other people that need to create specifications to use with AI or for common process.
+Focused on the specification phase, this kit empowers Product Managers and Designers to create clear, actionable specs for AI applications and standard processes.
+
+Compatible with any LLM platform supporting Projects or Claude Skills, with a file structure that follows standard IDE conventions for easy integration.
 
 ## ✨ Why Use This Kit?
 
@@ -16,42 +18,61 @@ This focus on product specification phase, usually made by Product Managers and 
 - **Consistent Quality**: Built-in validation ensures high standards across all documents
 - **Seamless Integration**: Works with your existing tools and workflows
 
-## What tools to use this kit?
+## Installation
 
-Use this kit with any tool thats supports Projects or in Claude Skills. 
+1. Download this repository. 
+2. For Claude Skills: [follow the official instructions](https://support.claude.com/en/articles/12512180-using-skills-in-claude).
 
-Originally created for Claude, but can be used with any tool that supports Projects, just creating a new project in your tool and copying the content of this repository to the your LLM Project.
-
-
-I try to make it as simple as possible to be portable, following folder and file structure used by IDEs, like Windsurf and Cursor, maintaing the possibility to be used in Projects or Claude Skills. But, my recommendation is to use it with Claude Skills.
-
-When using in Projects, copy/paste the description below in the Project instructions. You can ignore that if you are using Claude Skills.
+For other LLM platforms
+1. unzip the repository;
+2. Open your preferred LLM and create a new project;
+3. Copy the following files to the new LLM project:
+    - `SKILL.md` file
+    - Copy all markdown files from the `workflows`, `rules`, `templates`, and `example` of respository folders
+    - Add the following instructions to your project configuration:
 
 ```
 You will help managers and product teams to create and maintain high-quality product specifications. You will use the all the guidelines and instructions, step by step described in the SKILL.md located in the project base knowledge.
 
-Some descriptions will refer to files using relative paths, like `templates/prd-template.md` or `workflows/create-prd.md`. You can find the content of these files in the project base knowledge, ignore the file path.
+Some descriptions may reference files using relative paths (e.g., `templates/prd-template.md` or `workflows/create-prd.md`). The content of these files is available in the project's base knowledge; you can safely ignore the file paths.
 
-Read the SKILL.md file to get priority information before you do anything else. The SKILL.md file is your priority guide and need to be read before you do anything else. SKILL.md centralizes all instructions and rules for the Product Spec Kit.
+Before proceeding, carefully review the SKILL.md file. This is your primary reference that centralizes all instructions and rules for the Product Spec Kit. Reading this file first is essential for proper implementation.
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
-Using Claude Skills or Projects, you can start using this kit using some key words to trigger the skill or to be specific when you are using in LLM Projects scope.
+After installation, you can start using the Product Spec Kit by using the following prompts. If you are using Claude Skills, try:
 
-*Some examples:*
+```
+I want to create a PRD using Product Spec Kit instructions, with following informations:
 
+We will build a simple to-do list product called *Awesome Todo List*. Build the PRD following this informations:
+
+- The want to benefit users who have problems with an effective organization using tasks to direct the main objectives of their day and week.
+- We want to create a simple frictionless product, without bureaucracy, so people can organize themselves without large bureaucracies. 
+- The flow is simple: The user enters the page, add to-dos, without having to login or signup.
+
+- Some functional criteria:
+    - The to-do list doesn't have login/signup
+    - The todos are saved locally in the browser. If the user change the browser or device, the todos is not saved or synced.
+    - user can add a due date
+    - user can add title and description of the todo
+    - user can add labels, separated by comma, starting with #
+    - user can delete a todo
+    - user can mark as done a todo
+    - user can edit the todos.
+    - user can mark priority of high, medium and low in todos
+    - It doesn't need bulk actions.
+    - Export/Import and notifications will be for future evolutions. Just like filters, sorting and project folders.
+```
+
+> When using with other LLM Projects, don't forget to add the instructions above in LLM Project Instructions.
+
+Other examples:
 - "I want to *create a PRD* for push notifications, using following informations to create it and guide me through the process."
-- "Create a *plan* from my PRD"
+- "Breakdown a *PRD* into epics and stories"
+- "Breakdown a *Epic* into stories / tasks"
 - "Help me *clarify* my PRD"
-
-## 📚 Core Workflows
-
-### Full Product Lifecycle
-1. **PRD Creation**: `create-prd`
-2. **Release Planning**: `plan`
-3. **Epic Definition**: `create-epic`
-4. **Story Writing**: `create-issue`
 
 ---
 
@@ -59,9 +80,9 @@ Using Claude Skills or Projects, you can start using this kit using some key wor
 
 ## Contributing
 
-This skill evolves based on user needs. Feedback welcome!
+This project evolves based on user needs. We welcome your feedback and contributions!
 
-And so many thanks for [spec-kit](https://github.com/github/spec-kit) people. This project was inspired by their work.
+Special thanks to the [spec-kit](https://github.com/github/spec-kit) team for their inspiring work that helped shape this project.
 
 
 ## 📄 License
