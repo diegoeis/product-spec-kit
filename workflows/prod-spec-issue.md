@@ -1,177 +1,149 @@
 ---
-description: Workflow for creating standalone issues (stories, tasks, or bugs) using the stories template.
+description: Workflow for creating issues (stories, tasks, bugs) following the Product Spec Kit guidelines.
 auto_execution_mode: 1
 ---
 
 # Create Issue Workflow
 
-This workflow guides you through creating issues (story, task, or bug) related or not related with a PRD. Use the `templates/stories-template.md` template. You also can create a single, self-contained piece of work without going through the full PRD process.
+This workflow guides you through creating well-defined issues using the `templates/prod-issue-template.md`. Each issue should be a self-contained unit of work that can be completed within a single sprint.
 
 ## When to Use
-- Creating a single user story outside of a full feature
-- Creating a series of user stories or tasks related with a PRD and Epics
-- Documenting a bug that needs to be fixed
-- Creating a technical or non-functional task
-- When you need to quickly capture work without full documentation
-
-## Output
-- **File Location**: 
-  - For epic-related issues: `specs/[prd-name]/[epic-name]/[issue-type]-[short-description].md`
-  - For standalone issues: `specs/[prd-name]/[issue-type]-[short-description].md`
-- **Directory Structure**:
-  ```
-  specs/
-  └── [prd-name]/
-      │
-      ├── [epic-name-1]/        # If part of an epic
-      │   ├── [epic-name-1].md  # Epic document
-      │   ├── story-*.md        # User stories
-      │   ├── bug-*.md          # Bug reports
-      │   └── task-*.md         # Technical tasks
-      │
-      └── story-standalone.md   # If not part of an epic
-  ```
-- **Fallback**: If file system access is not available, the issue content will be displayed for manual copying
-- **Naming Conventions**:
-  - **User Stories**: `story-short-description.md` (e.g., `story-user-login.md`)
-  - **Bug Reports**: `bug-short-description.md` (e.g., `bug-login-error.md`)
-  - **Technical Tasks**: `task-short-description.md` (e.g., `task-update-dependencies.md`)
-  - **Research Spikes**: `spike-topic.md` (e.g., `spike-auth-providers.md`)
+- When breaking down epics into implementable user stories
+- For technical tasks or non-functional requirements
+- To document and track bugs
+- When you need to capture work that doesn't require full PRD documentation
+- For any work item that needs to be tracked in a sprint
 
 ## Prerequisites
-- Basic understanding of the issue to be created
-- Any relevant context or background information
-- Design references (if applicable)
+- Clear understanding of the work to be done
+- Related PRD or epic (if part of a larger initiative)
+- Design references (for user stories)
+- Any relevant technical constraints or requirements
 
-## Issue Types
+## Final Output
+- Use `templates/prod-issue-template.md` as the base template
+- Follow the exact template structure
+- Naming convention: `{type}-{id}.md` (e.g., `story-123.md`, `task-456.md`)
+- File language should match user interaction language
+- Include all relevant sections, even if marked as optional
 
-### User Story
-For new functionality or features that deliver user value:
-- Includes detailed acceptance criteria
-- Links to designs or mockups when available
+## Issue Structure
 
-### Task
-For technical or non-functional work:
-- Clear description of what needs to be done
-- Any technical requirements or constraints
-- Dependencies on other work
+### 1. Title & Metadata
+- **Title**: Clear, action-oriented title (e.g., "Implement User Login Form")
+- **Related Epic**: Link to parent epic if applicable
+- **Type**: Story/Task/Bug
+- **Priority**: High/Medium/Low
 
-### Bug
-For reporting issues:
-- Clear steps to reproduce
-- Expected vs. actual behavior
-- Environment details (if relevant)
+### 2. Description
+Follow this format:
+```
+**As a** [user role]  
+**I want** [goal]  
+**So that** [benefit/value]
+```
 
-## Steps
+### 3. Context
+- Background information
+- Business value
+- How it fits into the larger picture
+- Any relevant user research or data
 
-### 1. Initial Setup
-1. Create a new markdown file using the stories template
-2. Use the following naming convention: 
-   - For stories: `story-[short-description].md`
-   - For tasks: `task-[short-description].md`
-   - For bugs: `bug-[short-description].md`
-3. Add the appropriate metadata at the top of the file
+### 4. Acceptance Criteria
+- Use the format shown in the template
+- Group related criteria under clear subheadings
+- Include all possible scenarios and edge cases
+- Be specific about UI elements and behavior
+- Include error states and validations
 
-### 2. Core Components
-Fill in these essential sections:
+Example:
+```
+#### Authentication Flow
+- When user clicks "Login" button on homepage, system displays login modal
+- When user enters invalid email format, system displays error message below field
+- When authentication fails, system shows specific error message
+- After successful login, system redirects to user dashboard
+```
 
-#### Title & Context
-- Clear, action-oriented title
-- Link to related epic or feature (if applicable)
-- Background and business context
-- User story format (for user-facing changes)
-
-#### Acceptance Criteria
-For issues, acceptance criteria must be more granular than in PRDs, specifying exact user behavior and layout actions. Follow these guidelines:
-
-1. **User Actions & System Responses**:
-   - Start with "When [user action], then [system response]"
-   - Specify exact UI elements and their behavior journey
-   - Include all possible user paths and error states
-
-2. **Layout & Interaction Details**:
-   - Reference specific UI components and their states
-   - Include validation rules and messages
-   - Specify any animations or transitions
-
-3. **Example**:
-   ```
-   ##### Login Form
-   - When user clicks 'Login' button with empty fields, show "Please fill in all required fields" below the form
-   - When user enters an invalid email format, show "Please enter a valid email" below the email field immediately after moving focus away
-   - When login fails, show error message in red banner at top of form with retry button
-   - After successful login, redirect to dashboard with fade-out animation
-   ```
-
-4. **Validation Rules**:
-   - All interactive elements must be covered
-   - Include all error states and validations
-   - Specify any loading states or progress indicators
-
-#### Technical Notes (if applicable)
-- Implementation considerations
+### 5. Technical Requirements
+- Implementation guidance (suggestions, not requirements)
+- Performance considerations
+- Security requirements
+- Data requirements
 - Dependencies
-- Performance or security implications
 
-### 3. Validation
-1. Review against the Product Documentation Constitution:
-   - Is the purpose and value clear? (Principle I)
-   - Are acceptance criteria based on designs? (Principle II)
-   - Does it focus on functionality rather than description? (Principle III)
-   - Is the level of detail appropriate? (Principle IV)
-   - Have all assumptions been validated? (Principle V)
-2. Get feedback from team members if needed
-3. Update the issue based on feedback
+### 6. Edge Cases & Error Handling
+- List potential edge cases
+- Define how the system should handle each case
+- Include user-friendly error messages
 
-## Best Practices for Issue Acceptance Criteria
+### 7. Out of Scope
+- Clearly state what's not included
+- Reference future enhancements if needed
 
-### Writing Effective Criteria
-- **Be specific and concrete**:
-  - ❌ "The form should validate input"
-  - ✅ "When user submits the form with an invalid email, show 'Please enter a valid email' in red below the email field"
+### 8. Design Assets
+- Links to mockups/wireframes
+- Design system references
+- Prototype links
 
-- **Cover all scenarios**:
-  - Happy path
-  - Error conditions
-  - Edge cases
-  - Empty/initial states
+## Execution Steps
 
-- **Reference UI elements precisely**:
-  - Use exact field labels and button text
-  - Specify locations (e.g., "below the form", "in a red banner at the top")
-  - Include any visual feedback (e.g., "show loading spinner", "display success checkmark")
+### 1. Setup
+1. Create new file using `templates/prod-issue-template.md`
+2. Use correct naming convention
+3. Fill in all relevant sections
 
-### Common Patterns
-1. **Form Interactions**:
-   - Field-level validations
-   - Form submission handling
-   - Error message display
-   - Success states
+### 2. Define User Story (if applicable)
+- Follow the "As a/I want/So that" format
+- Keep it focused on user value
+- Ensure it's testable
 
-2. **Navigation**:
-   - Button/link actions
-   - Page transitions
-   - Back/forward behavior
+### 3. Write Acceptance Criteria
+- Start with user actions
+- Include all possible scenarios
+- Be specific about UI/UX
+- Cover error states
 
-3. **Dynamic Content**:
-   - Loading states
-   - Empty states
-   - Error states
-   - Data refresh behavior
+### 4. Add Technical Details
+- Document technical considerations
+- List dependencies
+- Note any special requirements
 
-### Validation Checklist
-- [ ] Every user action has a defined system response
-- [ ] All UI states are accounted for
-- [ ] Error messages are specified with exact text
-- [ ] Navigation behavior is clearly defined
-- [ ] All interactive elements have specified behavior
+### 5. Review & Validate
+1. Check against the template
+2. Verify all sections are complete
+3. Get feedback from team
+4. Update based on feedback
 
-## Template
-Use the stories template located at: `templates/stories-template.md`
+## Best Practices
 
-## Common Pitfalls to Avoid
-- Creating issues that are too large (break them down)
-- Missing acceptance criteria
-- Not including necessary context
-- Forgetting to link to related work
-- Being too prescriptive about implementation details
+### For User Stories
+- Focus on user needs, not implementation
+- Keep stories small and focused
+- Make them independent and negotiable
+- Ensure they're valuable to users
+
+### For Tasks
+- Be specific about what needs to be done
+- Include success criteria
+- Note any dependencies
+- Estimate effort if possible
+
+### For Bugs
+- Include steps to reproduce
+- Document expected vs actual behavior
+- Note environment details
+- Add screenshots if helpful
+
+## Common Pitfalls
+- Vague or incomplete acceptance criteria
+- Missing edge cases
+- Overly technical descriptions
+- Lack of clear success criteria
+- Not linking to related work
+
+## Integration Points
+- **PRDs**: Should trace back to requirements
+- **Epics**: Should fit within epic scope
+- **Sprints**: Should be sized appropriately
+- **Code**: Should reference issue ID in commits

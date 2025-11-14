@@ -8,7 +8,6 @@ auto_execution_mode: 1
 ```text
 $ARGUMENTS
 ```
-
 You **MUST** consider the user input before proceeding (if not empty).
 
 ## Outline
@@ -21,72 +20,72 @@ Execution steps:
 
 1. Load the current spec file. Perform a structured ambiguity & coverage scan using this taxonomy. For each category, mark status: Clear / Partial / Missing. Produce an internal coverage map used for prioritization (do not output raw map unless no questions will be asked). Analyze the spec file and perform a coverage just with the items that are included in the user specification. 
 
-In the final of the process, asks for the user to confirm the clarification and suggest create and clarify the missing items. 
+At the final of the process, asks for the user to confirm the clarification and list the missing items and asks if the user want to clarify them.
 
-   Functional Scope & Behavior:
-   - Core user goals & success criteria
-   - Explicit out-of-scope declarations
-   - User roles / personas differentiation
+Functional Scope & Behavior:
+- Core user goals & success criteria
+- Explicit out-of-scope declarations
+- User roles / personas differentiation
 
-   Domain & Data Model:
-   - Entities, attributes, relationships
-   - Identity & uniqueness rules
-   - Lifecycle/state transitions
-   - Data volume / scale assumptions
+Domain & Data Model:
+- Entities, attributes, relationships
+- Identity & uniqueness rules
+- Lifecycle/state transitions
+- Data volume / scale assumptions
 
-   Interaction & UX Flow:
-   - Critical user journeys / sequences
-   - Error/empty/loading states
-   - Accessibility or localization notes
+Interaction & UX Flow:
+- Critical user journeys / sequences
+- Error/empty/loading states
+- Accessibility or localization notes
 
-   Non-Functional Quality Attributes:
-   - Performance (latency, throughput targets)
-   - Scalability (horizontal/vertical, limits)
-   - Reliability & availability (uptime, recovery expectations)
-   - Observability (logging, metrics, tracing signals)
-   - Security & privacy (authN/Z, data protection, threat assumptions)
-   - Compliance / regulatory constraints (if any)
+Non-Functional Quality Attributes:
+- Performance (latency, throughput targets)
+- Scalability (horizontal/vertical, limits)
+- Reliability & availability (uptime, recovery expectations)
+- Observability (logging, metrics, tracing signals)
+- Security & privacy (authN/Z, data protection, threat assumptions)
+- Compliance / regulatory constraints (if any)
 
-   Integration & External Dependencies:
-   - External services/APIs and failure modes
-   - Data import/export formats
-   - Protocol/versioning assumptions
+Integration & External Dependencies:
+- External services/APIs and failure modes
+- Data import/export formats
+- Protocol/versioning assumptions
 
-   Edge Cases & Failure Handling:
-   - Negative scenarios
-   - Rate limiting / throttling
-   - Conflict resolution (e.g., concurrent edits)
+Edge Cases & Failure Handling:
+- Negative scenarios
+- Rate limiting / throttling
+- Conflict resolution (e.g., concurrent edits)
 
-   Constraints & Tradeoffs:
-   - Technical constraints (language, storage, hosting)
-   - Explicit tradeoffs or rejected alternatives
+Constraints & Tradeoffs:
+- Technical constraints (language, storage, hosting)
+- Explicit tradeoffs or rejected alternatives
 
-   Terminology & Consistency:
-   - Canonical glossary terms
-   - Avoided synonyms / deprecated terms
+Terminology & Consistency:
+- Canonical glossary terms
+- Avoided synonyms / deprecated terms
 
-   Completion Signals:
-   - Acceptance criteria testability
-   - Measurable Definition of Done style indicators
+Completion Signals:
+- Acceptance criteria testability
+- Measurable Definition of Done style indicators
 
-   Misc / Placeholders:
-   - TODO markers / unresolved decisions
-   - Ambiguous adjectives ("robust", "intuitive") lacking quantification
+Misc / Placeholders:
+- TODO markers / unresolved decisions
+- Ambiguous adjectives ("robust", "intuitive") lacking quantification
 
-   For each category with Partial or Missing status, add a candidate question opportunity unless:
-   - Clarification would not materially change implementation or validation strategy
-   - Information is better deferred to planning phase (note internally)
+For each category with Partial or Missing status, add a candidate question opportunity unless:
+- Clarification would not materially change implementation or validation strategy
+- Information is better deferred to planning phase (note internally)
 
-3. Generate (internally) a prioritized queue of candidate clarification questions (maximum 5). Do NOT output them all at once. Apply these constraints:
-    - Maximum of 10 total questions across the whole session.
-    - Each question must be answerable with EITHER:
-       - A short multiple‑choice selection (2–5 distinct, mutually exclusive options), OR
-       - A one-word / short‑phrase answer (explicitly constrain: "Answer in <=5 words").
-    - Only include questions whose answers materially impact architecture, data modeling, task decomposition, test design, UX behavior, operational readiness, or compliance validation.
-    - Ensure category coverage balance: attempt to cover the highest impact unresolved categories first; avoid asking two low-impact questions when a single high-impact area (e.g., security posture) is unresolved.
-    - Exclude questions already answered, trivial stylistic preferences, or plan-level execution details (unless blocking correctness).
-    - Favor clarifications that reduce downstream rework risk or prevent misaligned acceptance tests.
-    - If more than 5 categories remain unresolved, select the top 5 by (Impact * Uncertainty) heuristic.
+3. Generate (internally) a prioritized queue of candidate clarification questions (maximum 5). IMPORTANT: Do NOT output them all at once. Apply these constraints:
+   - Maximum of 10 total questions across the whole session.
+   - Each question must be answerable with EITHER:
+      - A short multiple‑choice selection (2–5 distinct, mutually exclusive options), OR
+      - A one-word / short‑phrase answer (explicitly constrain: "Answer in <=5 words").
+   - Only include questions whose answers materially impact architecture, data modeling, task decomposition, test design, UX behavior, operational readiness, or compliance validation.
+   - Ensure category coverage balance: attempt to cover the highest impact unresolved categories first; avoid asking two low-impact questions when a single high-impact area (e.g., security posture) is unresolved.
+   - Exclude questions already answered, trivial stylistic preferences, or plan-level execution details (unless blocking correctness).
+   - Favor clarifications that reduce downstream rework risk or prevent misaligned acceptance tests.
+   - If more than 5 categories remain unresolved, select the top 5 by (Impact * Uncertainty) heuristic.
 
 4. Sequential questioning loop (interactive):
     - Present EXACTLY ONE question at a time.

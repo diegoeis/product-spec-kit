@@ -3,7 +3,7 @@ description: Quick start guide for the Product Spec Kit
 auto_execution_mode: 1
 ---
 
-# Start
+# start
 
 These instructions help guide the user who wants to start building a specification. This specification can range from a PRD, user story, or tasks. We should guide them through this construction by following the instructions below.
 

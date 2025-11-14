@@ -26,7 +26,7 @@ Use what the user provides to analyze.
 ## Final Output
 - By default, to create the final file PRD, use the `templates/prod-prd-template.md` template
 - **Strictly follow the templates defined here.** Do not create new sections that don't exist in the templates for the final file. Just if the user explicity requests it.
-- The final file must be in markdown format, following the naming convention: `{projectname}-prd.md`
+- In the final process, give the final file to the user to validate in markdown format, following the naming convention: `{projectname}-prd.md`
 - Only include technical requirements if requested by the user or if they provide this information. Otherwise, leave these requirements out for now.
 - The final file language need to be the same language of the user interaction, or the language defined by the user. Including the headings and default content of template.
 
@@ -39,6 +39,7 @@ Use what the user provides to analyze.
 - Do not assume or invent data, information, or new sections in the final files
 
 #### Common Pitfalls to Avoid
+- Asks questions of clarification phase too soon, when the user doesn't provide enough information. Just follow the PRD template and the rules file. Ask clarification questions just when it's necessary.
 - Writing overly detailed requirements (except for stories)
 - Not including success metrics
 - Failing to validate assumptions
@@ -103,25 +104,8 @@ The acceptance criteria written in a PRD and in Issues (user stories and tasks) 
 4. Check the project rules to identify if there are any main points to follow or if this request violates any main rule or process. If it does, ask for clarification. Only proceed if the user requests it.
 
 
-## PRD-Specific Best Practices
-### General PRD Guidelines
-- Keep it concise but complete
-- Use visual aids (diagrams, mockups) when helpful
-- Link to supporting documents rather than duplicating content
-- Maintain a single source of truth
-- Update the PRD as requirements evolve
-
-### Common Pitfalls to Avoid
-- Writing requirements that are too detailed (save for stories)
-- Not including success metrics
-- Failing to validate assumptions
-- Not updating the PRD when requirements change
-- Creating requirements without user input
-
-
 ## Next Steps
-Validate the final content. After PRD approval, consider:
+Validate the final content. After PRD approval, create and give the final file to the user. And, give the next steps options:
 1. Clarifying and identifying gaps that might be missing from the final PRD using the `prod-clarify.md`
 2. Creating a breakdown of requirements into user epics and user stories using the `prod-plan.md` workflow
-3. Breaking down requirements into user stories or tasks with `prod-spec-issue.md`
-4. Create epics using `prod-spec-epic.md`
+3. Create epics using `prod-spec-epic.md`
