@@ -1,5 +1,5 @@
 ---
-name: {Product Name}  
+name: {Initiative or Product Name}  
 version: {X.Y.Z}
 created_at: {YYYY-MM-DD}
 updated_at: {YYYY-MM-DD}
