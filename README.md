@@ -1,8 +1,8 @@
 ---
-date_modified: 2025-10-31
+date_modified: 2025-11-13
 ---
 
-# Product Spec Kit 🚀
+# README
 
 A comprehensive framework for creating and managing product documentation with AI assistance. Perfect for both new projects and existing products, helping teams maintain high-quality specifications from concept to implementation.
 
