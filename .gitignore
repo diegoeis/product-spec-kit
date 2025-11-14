@@ -6,6 +6,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.zip
 
 # Editor directories and files
 .idea/
