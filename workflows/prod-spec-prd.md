@@ -106,6 +106,6 @@ The acceptance criteria written in a PRD and in Issues (user stories and tasks) 
 
 ## Next Steps
 Validate the final content. After PRD approval, create and give the final file to the user. And, give the next steps options:
-1. Clarifying and identifying gaps that might be missing from the final PRD using the `prod-clarify.md`
-2. Creating a breakdown of requirements into user epics and user stories using the `prod-plan.md` workflow
+1. Clarifying and identifying gaps that might be missing from the final PRD using the `prod-spec-clarify.md`
+2. Creating a breakdown of requirements into user epics and user stories using the `prod-spec-breakdown.md` workflow
 3. Create epics using `prod-spec-epic.md`
